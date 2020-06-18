@@ -1,0 +1,183 @@
+@charset "UTF-8";
+:root {
+  --blue: #72C3DC;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555555;
+  text-align: left;
+  background-color: #f6f7f9;
+  overflow-x: hidden;
+}
+
+/* Global CSS - Prabhuram */
+
+html, body {
+  height: -webkit-fill-available;
+}
+
+.btn {
+  border-radius: 10px;
+  color: #FFF;
+  background-color: #72C3DC;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.authorTxt {
+  text-align: center;
+  font-style: italic;
+}
+
+.centerHeaderTxt {
+  text-align: center;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 576px) {
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: space-between;
+}
+
+.leftContainer {
+  width: 79%;
+}
+
+.rightContainer {
+  width: 20%;
+}
+
+.mobile-card, .mobileTopContainer, .mobileBottomContainer {
+  display: none;
+}
+
+.leftContainer, .rightContainer {
+  padding: 15px;
+  font-size: 18px;
+  min-height: 30vh;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin-top: 12px;
+  min-height: -webkit-fill-available;
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 17px;
+  box-shadow:
+    inset 0 0 15px rgba(55, 84, 170,0),
+    inset 0 0 20px rgba(255, 255, 255,0),
+    7px 7px 15px rgba(55, 84, 170,.15),
+    -7px -7px 20px rgba(255, 255, 255,1),
+    inset 0px 0px 4px rgba(255, 255, 255,.2);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid #6F98A8;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 23px 160px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+}
+
+/* Mobile CSS */
+@media only screen and (min-width: 375px) and (max-width: 576px) {
+  .leftContainer, .rightContainer {
+    display: none;
+  }
+  .mobileTopContainer, .mobileBottomContainer {
+    width: 100%;
+  }
+  .mobileHeader {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align:center;
+    margin: 0;
+    font-weight: normal;
+  }
+  .mobile-card {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    display: none;
+  }
+  .btn {
+    display: inline-block;
+    display: inline-block;
+    width: 20%;
+    margin: 10px 2px;
+    outline: 0;
+    border: none;
+    border-bottom: 3px solid #6F98A8;
+  }
+  .centerAlignBtn {
+    margin-left: 149px;
+    margin-bottom: 10px;
+  }
+  h5 {
+    text-align: center;
+    margin-top: -30px;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: -15px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
